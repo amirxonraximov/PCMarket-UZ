@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class OrderDto {
+public class PaymentDto {
 
     private String customerName;
 
@@ -16,6 +16,7 @@ public class OrderDto {
 
     private String address;
 
-    @OneToMany
-    private List<Integer> productIds;
+    private List<PurchaseDetailDto> purchaseDetails;
+
+    private Integer currencyId;
 }

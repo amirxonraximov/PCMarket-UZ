@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Order {
+public class Payment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +26,9 @@ public class Order {
     private String address;
 
     @OneToMany
-    private List<Product> products;
+    private List<PurchaseDetail> purchaseDetailList;
+
+    @OneToOne
+    private Currency currency;
 
 }
