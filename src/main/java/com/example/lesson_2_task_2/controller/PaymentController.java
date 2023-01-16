@@ -1,4 +1,4 @@
-package com.example.lesson_2_task_2.entity.controller;
+package com.example.lesson_2_task_2.controller;
 
 import com.example.lesson_2_task_2.entity.Currency;
 import com.example.lesson_2_task_2.entity.Payment;
